@@ -1,0 +1,383 @@
+ css 
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    direction: rtl;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    background-color: #cdf1ff33;
+  padding: 0;
+  margin: 0;
+}
+header {
+    grid-area: header; 
+    background-color: #333;
+    color: white; 
+    padding: 15px; 
+    display: flex;
+
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+
+}
+
+
+  header a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: right;
+  }
+  
+
+  header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .logo{
+    color:#333;
+    border-style: groove;
+    width: 8%;
+    height: 8%;
+}
+.main-content{
+    grid-area: main-content;
+}
+.textAboutUs {
+    text-align: right;
+    margin: 20px;
+    line-height: 1.6; /* ניגש למרווח בין שורות */
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1{
+    margin-left:0%;
+    margin-right: 0%;
+}
+
+
+.textAboutUs h1 {
+    font-size: 2.5em; 
+}
+
+.textAboutUs p {
+    font-size: 1.2em;
+}
+
+.textAboutUs br {
+    display: none; 
+    }
+.imghead{
+    width: 100%;
+    height: auto;
+    margin-top:0px;
+    left:0px;
+}
+.se{
+  display: none;
+object-fit: cover;
+}
+
+.galeria{
+    position: relative;
+    height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto); 
+  grid-template-rows: repeat(5, auto);
+  padding: 10px;
+  gap: 2%;
+  margin-bottom: 10%;
+  grid-template-areas:
+  'item1 item1 item2 item3 item16 '
+  'item4 item5 item5 item3 item8 '
+  'item13 item10 item10 item6 item6 '
+  'item13 item9 item7 item7 item11'
+  'item14 item14 item12 item12 item11'
+  ;
+}
+/* .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* או object-contain או אחד מהערכים האחרים שמתאימים לך 
+  object-position: center; /* או כל ערך אחר שיתאים לך 
+} */
+.item15{
+  display: none;
+}
+.grid-item{
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: auto;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* 
+.grid-item:hover {
+  transform: scale(1.1);
+} */
+.video{
+    border: 2px solid black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+.item7 { grid-area: item7; }
+.item8 { grid-area: item8; }
+.item9 { grid-area: item9; }
+.item10 { grid-area: item10;}
+.item11 { grid-area: item11; }
+.item12{ grid-area: item12; }
+.item13{ grid-area: item13; }
+.item14{ grid-area: item14; }
+.item15{ grid-area: item15; }
+.item16{ grid-area: item16; }
+
+
+main {
+    overflow:hidden; 
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 2%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 2%;
+}
+textarea:focus {
+  outline: none;
+  border-color: #007bff; 
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    font-size:small;
+  }
+  
+  .contact-info {
+    display: flex;
+    width: 100%;
+  }
+  
+  .right-section,
+  .left-section {
+    flex: 1;
+  }
+  
+  .contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  .left-section {
+    max-width: 300px;
+    margin-right: 40px;
+  }
+  
+  .left-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-section label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .left-section input,
+  .left-section textarea {
+    font-size: 14px; /* קטינת גודל הגופן */
+    padding: 8px; /* קטינת הריווחים סביב האינפוטים */
+    margin-bottom: 15px;
+  }
+  
+  .left-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .left-section button:hover {
+    background-color: #45a049;
+  }
+  
+  .right-section {
+    margin-left: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right-section,
+    .left-section {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: 375px){
+    body {
+      font-size: small; 
+    }
+  
+    .link1 ,.link2 ,.link3{
+      font-size: 16px;
+    }
+    .logo {
+      width: 15%; 
+      height: 15%;
+     }
+     .se{
+      display: block;
+     }
+     .galeriase {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(5, auto);
+      padding: 10px;
+      gap: 0.5%;
+      grid-template-areas:
+        'item1'
+        'item2'
+        'item4'
+        'item5'
+        'item7'
+        ;
+      margin-bottom: 7%;
+    } 
+
+     .galeria{
+      display: none;
+     }
+    .grid-item {
+      max-width: 100%;
+    }
+    .footer {
+      padding: 10px;
+      font-size: x-small;
+      
+    }
+    .contact-info h3 {
+      font-size: 18px;
+     margin-bottom: 10px;
+   }
+ 
+   .left-section,
+   .right-section {
+     max-width: 100%; 
+   }
+  }
+   @media only screen and (max-width: 1000px){
+     
+    .logo {
+      width: 15%; 
+      height: 15%;
+    }
+  
+    .content {
+      margin-left: 5%;
+      margin-right: 5%; 
+    }
+  
+    .textAboutUs h1 {
+      font-size: 1.8em; 
+    }
+  
+    .textAboutUs p {
+      font-size: 1em;
+    }
+    .galeria{
+
+    grid-template-columns: repeat(4, auto); 
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    'item1 item1 item2 item3'
+    'item4 item5 item5 item3'
+    'item13 item10 item10 item10'
+    'item13 item9 item7 item7'
+    ;
+  }
+  .item6{ display: none;} 
+  .item8{ display: none;} 
+  .item11{ display: none;} 
+  .item12{ display: none;} 
+  .item14{ display: none;} 
+  .item15{ display: none;} 
+  .item16{ display: none;} 
+  } 
+  @media only screen and (max-width: 500px){
+    header {
+      font-size: 25px; 
+    }
+  }
+  @media only screen and  (max-width: 768px)
+   {
+    .logo {
+      width: 15%; 
+      height: 15%;
+    }
+    .galeria{
+      grid-template-columns: repeat(3, auto); 
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+      'item1 item1 item2 '
+      'item4 item5 item5 '
+      'item13 item10 item10 '
+      'item13 item9 item7 '
+      ;
+    }
+    .item3{ display: none;} 
+    .item6{ display: none;} 
+  .item8{ display: none;} 
+  .item11{ display: none;} 
+  .item12{ display: none;} 
+  .item14{ display: none;} 
+  .item15{ display: none;} 
+  .item16{ display: none;}
+  } 
+

@@ -1,0 +1,362 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+    direction: rtl;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    background-color: #cdf1ff33;
+  }
+  header {
+    grid-area: header; 
+    background-color: #333; /* צבע רקע */
+    color: white; /* צבע טקסט */
+    padding: 15px; /* מרווח בין התכנים לקצוות ה-Navigation Bar */
+    display: flex;
+    /* justify-content: space-between; מסדר שיהיו רווחים בין האותיות */
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: right;
+  }
+  header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .logo{
+    color:#333;
+    border-style: groove;
+    width: 8%;
+    height: 8%;
+}
+.respons{
+  display: none;
+}
+.info{
+    margin: 20px;
+    line-height: 1.6; /* ניגש למרווח בין שורות */
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+.price{
+margin-left: 10%;
+font-size: x-large;
+line-height: 2.5;
+width: 40%;
+height: 40%;
+order: 2;
+border: groove;
+padding: 20px;
+display: inline-block;
+box-sizing: border-box;
+}
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+main form {
+  order: 3;
+  width: 70%;
+  border: groove;
+}
+
+.imginput {
+  width: 30px;
+  height: 30px;
+}
+
+.Finput p{
+  font-size:xx-large;
+}
+.Finput {
+  margin-bottom: 20px;
+  align-items:start;
+  text-align: right;
+margin-right: 25%;
+}
+.Finput textarea{
+  font-family: 'Secular One', sans-serif;
+
+}
+.Finput input{
+  direction: rtl;
+}
+.Finput button {
+  background-color: #4CAF50;
+  width: 30%;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Finput button:hover {
+  background-color: #45a049;
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 2%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff; 
+}
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 2%;
+  
+}
+textarea:focus {
+  outline: none;
+  border-color: #007bff; 
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  font-size:small;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+}
+
+.right-section,
+.left-section {
+  flex: 1;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.left-section {
+  max-width: 300px;
+  margin-right: 40px;
+}
+
+.left-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.left-section input,
+.left-section textarea {
+  font-size: 14px; /* קטינת גודל הגופן */
+  padding: 8px; /* קטינת הריווחים סביב האינפוטים */
+  margin-bottom: 15px;
+}
+
+.left-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-section button:hover {
+  background-color: #45a049;
+}
+
+.right-section {
+  margin-left: auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-section,
+  .left-section {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* @media only screen and (max-width: 375px){
+  body {
+    font-size: small; /* Adjust the font size for smaller screens 
+    width: 100%;
+    max-width: 100%;
+  }
+.link1 ,.link2 ,.link3{
+  font-size: 16px;
+}
+
+  .footer {
+    padding: 10px;
+    font-size: x-small; /* Adjust the font size for the footer 
+    
+  }
+} */
+
+@media only screen and (max-width: 1176px){
+
+  .conteiner {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: 5%;
+  }
+  main form {
+    width: 100%;
+  }
+  .price{
+    text-align: center;
+    font-size: 115%;
+    margin-bottom: 5%;
+    width: 70%;
+    min-width: 100%;
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: medium; 
+    max-width: 100%;
+    width: 100%;
+  }
+  .link1 ,.link2 ,.link3{
+    font-size: 16px;
+  }
+  .logo {
+    width: 15%;
+    height: 15%;
+  }
+.notrespons{
+  display: none;
+}
+.respons{
+  display: block;
+}
+  .info {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .conteiner{
+    margin-bottom:5%;
+  }
+  .price{
+    text-align: center;
+    font-size: medium;
+    /* width: 70%; */
+    margin-bottom: 5%;
+    min-width: 100%;
+
+    }
+    main form {
+      width: 100%;
+    }
+  .Finput {
+    margin-right: 5%;
+  }
+
+  .imginput {
+    width: 10%; 
+    height: auto;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  form textarea{
+    max-width:80%;
+  }
+  
+  .contact-info h3 {
+     font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%; 
+  }
+}
+@media only screen and (max-width: 546px) and (min-width: 376px){
+  .link1 ,.link2 ,.link3{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .logo {
+    width: 15%; 
+    height: 15%;
+  }
+  .contact-info h3 {
+    font-size: 18px;
+   margin-bottom: 10px;
+ }
+ .info {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+/* .conteiner{
+  margin-bottom:5%;
+  justify-content:  center;/* ממורכז באופן אופקי 
+  align-items: center; /* ממורכז באופן אנכי 
+
+} */
+.price{
+  text-align: center;
+  font-size: 115%;
+  margin-bottom: 5%;
+  width: 70%;
+  min-width: 100%;
+  }
+  main form {
+    width: 100%;
+  }
+ .left-section,
+ .right-section {
+   max-width: 100%; 
+ }
+ form textarea{
+  max-width:80%;
+}
+
+}
