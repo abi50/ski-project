@@ -1,4 +1,7 @@
- css 
+@font-face {
+  font-family: 'Secular One';
+  src: url('../פונטים/SecularOne-Regular.ttf') format('truetype');
+}
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
