@@ -48,27 +48,9 @@ ski-project/
 
 ---
 
-## 🔤 Font Usage – Secular One
-
-The site uses a Hebrew font named **Secular One**, located under the `פונטים/` directory.
-
-To make the font work without installation:
-- Each CSS file includes a `@font-face` rule like this:
-
-```css
-@font-face {
-  font-family: 'Secular One';
-  src: url('../פונטים/SecularOne-Regular.ttf') format('truetype');
-}
-```
-
-This ensures the font loads automatically from the local folder, even if it’s not installed on the system.
-
----
-
 ## 🖥️ How to Run Locally
 
-1. Open `pages/home.html` in your browser.
+1. Open `index.html` in your browser.
 2. Make sure all folders (`css/`, `img/`, `video/`, `פונטים/`) are in the correct relative paths.
 3. Navigate between pages using the site menu.
 
